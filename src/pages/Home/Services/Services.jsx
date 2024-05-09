@@ -11,10 +11,10 @@ const Services = () => {
           .then((data) => setServices(data));
     },[])
   return (
-    <div className="mt-4" data-aos="fade-left">
-      <div className="text-center">
+    <div className="mt-4" >
+      <div className="text-center space-y-3 lg:px-0 px-3">
         <h3 className="text-2xl font-bold text-orange-600">Our services</h3>
-        <h2 className="text-5xl">Our Services Area</h2>
+        <h2 className="text-3xl lg:text-5xl">Our Services Area</h2>
         <p>
           the majority have suffered alteration in some form, by injected
           humour, or randomised <br /> words which do not look even slightly

@@ -3,7 +3,7 @@ import parts from "../../../assets/images/about_us/parts.jpg";
 
 const About = () => {
   return (
-    <div className="hero min-h-screen" data-aos="fade-down-right">
+    <div className="hero my-14">
       <div className="hero-content flex-col lg:flex-row">
         <div className="lg:w-1/2 relative">
           <img src={person} className="w-3/4 rounded-lg shadow-2xl" />
@@ -28,7 +28,7 @@ const About = () => {
             humour, or randomised words which do not look even slightly
             believable.
           </p>
-          <button className="btn bg-orange-600 hover:bg-orange-800 border-0 text-white">
+          <button className="btn bg-orange-600 hover:bg-orange-800 border-0 text-white rounded-full">
             Get more info
           </button>
         </div>

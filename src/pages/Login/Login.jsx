@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import img from "../../assets/images/login/login.svg"
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const Login = () => {
@@ -15,12 +16,13 @@ const Login = () => {
           
               const email = form.email.value;
               const password = form.password.value;
-              console.log(email,password);
+             
               signIn(email,password)
               .then(result=>{
                 const user = result.user
-                console.log(user);
+               
                 navigate(location?.state ? location?.state: '/')
+                Swal.fire("Logged in Successfully");
               })
               .catch(error=>console.log(error))
     }

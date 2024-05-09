@@ -1,0 +1,10 @@
+.active {
+  color: rgb(221, 56, 27) !important;
+  font-weight: bold;
+  background: none !important;
+}
+
+a:active {
+  background: transparent !important;
+}
+

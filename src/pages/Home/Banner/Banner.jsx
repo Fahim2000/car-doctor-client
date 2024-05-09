@@ -7,8 +7,8 @@ import img4 from "../../../assets/images/banner/4.jpg"
 
 const Banner = () => {
     return (
-      <div data-aos="fade-left" className="mt-14">
-        <div className="carousel w-full h-[480px] lg:h-[600px]">
+      <div data-aos="fade-left" className="mt-14 lg:px-0 px-3">
+        <div className="carousel w-full h-[480px] lg:h-[650px]">
           <div id="slide1" className="carousel-item relative w-full">
             <img src={img1} className="w-full rounded-xl object-cover" />
             <div className="absolute rounded-xl flex items-center h-full top-0 left-0 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">

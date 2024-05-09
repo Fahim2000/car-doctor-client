@@ -25,7 +25,7 @@ const BookService = () => {
             price
         }
 
-        console.log(booking);
+       
 
         fetch("http://localhost:5000/bookings",{
             method:'POST',
@@ -36,7 +36,7 @@ const BookService = () => {
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log(data);
+           
             if(data.insertedId){
                 Swal.fire("Service Booked Successfully");
             }
@@ -45,7 +45,7 @@ const BookService = () => {
 
       }
     return (
-      <div>
+      <div className="min-h-[65vh]">
         <h2 className="text-center text-3xl">Book Service: {title}</h2>
 
         <form className="card-body" onSubmit={handleBookService}>
